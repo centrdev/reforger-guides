@@ -5,7 +5,7 @@ const BASE_URL = '/';
 
 export default defineConfig({
     base: BASE_URL,
-    title: 'ARMA Reforger Workbench',
+    title: 'ARMA Reforger',
     description: 'Tips, tutorials and notes',
     ignoreDeadLinks: true,
     lastUpdated: true,
