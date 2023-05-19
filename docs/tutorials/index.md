@@ -4,7 +4,7 @@ order: -99
 comment: false
 ---
 
-# Introduction
+# Welcome
 
 See the left-hand menu for additional information about available tutorials.
 

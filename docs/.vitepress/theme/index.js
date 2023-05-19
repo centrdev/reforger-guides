@@ -1,13 +1,13 @@
 // .vitepress/theme/index.js
-import DefaultTheme from 'vitepress/theme'
-import QuestionComponent from '/components/Question.vue';
-import ToolkitComponent from '/components/Toolkit.vue';
-import AuthComponent from '/components/Auth.vue';
-import ExclusivePage from '/components/ExclusivePage.vue';
 import { useData, useRoute } from 'vitepress';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import googleAnalytics from 'vitepress-plugin-google-analytics'
-import './athena.css'
+import googleAnalytics from 'vitepress-plugin-google-analytics';
+import DefaultTheme from 'vitepress/theme';
+import './athena.css';
+import AuthComponent from '/components/Auth.vue';
+import ExclusivePage from '/components/ExclusivePage.vue';
+import QuestionComponent from '/components/Question.vue';
+import ToolkitComponent from '/components/Toolkit.vue';
 
 export default {
     ...DefaultTheme,
@@ -18,24 +18,28 @@ export default {
         app.component('ExclusivePage', ExclusivePage);
 
         googleAnalytics({
-            id: 'G-D2PZTWXMJ7'
-        })
+            //id: 'G-D2PZTWXMJ7'
+        });
     },
     setup() {
         const { frontmatter } = useData();
         const route = useRoute();
 
-        giscusTalk({
-            repo: 'Stuyk/altv-athena',
-            repoId: 'MDEwOlJlcG9zaXRvcnkyOTg3MTM0NTg=',
-            category: 'Documentation Feedback',
-            categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMjY2NDY0',
-            mapping: 'path',
-            term: 'Leave a comment!',
-            reactionsEnabled: '1',
-            lang: 'en',
-        }, {
-            frontmatter, route
-        });
-    }
-}
+        giscusTalk(
+            {
+                repo: 'centrdev/reforger-guides',
+                repoId: 'R_kgDOJk-DL',
+                category: 'Feedback',
+                categoryId: 'DIC_kwDOJk-DLs4CWmWs',
+                mapping: 'path',
+                term: 'Leave a comment!',
+                reactionsEnabled: '1',
+                lang: 'en',
+            },
+            {
+                frontmatter,
+                route,
+            }
+        );
+    },
+};
