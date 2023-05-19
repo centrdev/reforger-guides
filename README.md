@@ -1,6 +1,6 @@
-# alt:V Athena Documentation
+# ARMA Reforger Guides
 
-Official documentation repository that utilizes vitepress, and used as the home page for `https://athenaframework.com/`.
+A collection of guides, notes and tips for ARMA Reforger Workbench
 
 ## Viewing Docs Locally
 
