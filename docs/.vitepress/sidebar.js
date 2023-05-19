@@ -69,11 +69,6 @@ export function getSidebar() {
                 collapsed: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/modding'),
             },
-            {
-                text: 'Subscribers Only',
-                collapsed: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/premium'),
-            },
         ],
         '/api': [
             {
