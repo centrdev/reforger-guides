@@ -25,6 +25,7 @@ export default {
         const { frontmatter } = useData();
         const route = useRoute();
 
+        // Obtain configuration from: https://giscus.app/
         giscusTalk(
             {
                 repo: 'centrdev/reforger-guides',
