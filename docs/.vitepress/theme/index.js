@@ -26,6 +26,22 @@ export default {
         const route = useRoute();
 
         // Obtain configuration from: https://giscus.app/
+        /*giscusTalk(
+            {
+                repo: 'centrdev/reforger-guides',
+                repoId: 'R_kgDOJk-DL',
+                category: 'Feedback',
+                categoryId: 'DIC_kwDOJk-DLs4CWmWs',
+                mapping: 'pathname',
+                term: 'Leave a comment!',
+                reactionsEnabled: '1',
+                lang: 'en',
+            },
+            {
+                frontmatter,
+                route,
+            }
+        );*/
         giscusTalk(
             {
                 repo: 'centrdev/reforger-guides',
