@@ -1,7 +1,7 @@
 ---
 title: 'Creating Plugins'
 order: -98
-outline: [1,6]
+outline: [1, 6]
 comment: false
 ---
 
@@ -23,14 +23,14 @@ Path should be `src/core/plugins/my-plugin`
 
 Create `3` folders inside of the `my-plugin` folder:
 
-* server
-* client
-* webview
+-   server
+-   client
+-   webview
 
 Create an `index.ts` file inside of these `2` folders:
 
-* server/index.ts
-* client/index.ts
+-   server/index.ts
+-   client/index.ts
 
 Inside of `server/index.ts` put the following:
 
@@ -61,7 +61,7 @@ That's all that is needed to start building plugins.
 
 If you want to know how to integrate your own API to distribute it to users of Athena with auto-completion, there is a guide for that.
 
-[Check the Guide Out](/tutorials/free/top/plugin-api.md)
+[Check the Guide Out](/tutorials/top/plugin-api.md)
 
 ## Special Files
 
@@ -134,32 +134,32 @@ Example: `StuykVueCharSelect`
 
 ```html
 <template>
-  <div class="container">
-    <div class="purple">
-      {{ helloWorldText }}, {{ saySomethingElse ? saySomethingElse : '' }}
+    <div class="container">
+        <div class="purple">{{ helloWorldText }}, {{ saySomethingElse ? saySomethingElse : '' }}</div>
     </div>
-  </div>
-<template>
+    <template>
+        <script lang="ts" setup>
+            import { onMounted, ref } from 'vue';
+            import WebViewEvents from '@utility/webViewEvents';
 
-<script lang="ts" setup>
-import { onMounted, ref } from 'vue'
-import WebViewEvents from '@utility/webViewEvents';
+            let helloWorldText = ref('Hello World!');
+            let saySomethingElse = ref(undefined);
 
-let helloWorldText = ref('Hello World!');
-let saySomethingElse = ref(undefined)
+            onMounted(() => {
+                console.log('Hello in console');
+                saySomethingElse.value = 'I have assigned this value later.';
+            });
+        </script>
 
-onMounted(() => {
-  console.log('Hello in console');
-  saySomethingElse.value = 'I have assigned this value later.'
-});
-</script>
-
-<style scoped>
-.purple {
-  color: purple;
-}
-</style>
+        <style scoped>
+            .purple {
+                color: purple;
+            }
+        </style></template
+    ></template
+>
 ```
+
 :::
 
 ### my-plugin/webview/assets
@@ -175,4 +175,3 @@ If you place a file in this folder called `stuyk-logo-custom.png` the HTML code 
 ```
 <img src="/plugins/stuyk-logo-custom.png" />
 ```
-

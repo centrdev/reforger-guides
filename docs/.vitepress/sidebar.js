@@ -3,7 +3,7 @@ import SidebarBuilder from '@stuyk/vitepress-sidebar-builder';
 function groupByPathway(folderPath, filterByName) {
     const groups = {};
 
-    const files = SidebarBuilder.get.filesAndOrder(folderPath).filter(x => x.link.includes(filterByName))
+    const files = SidebarBuilder.get.filesAndOrder(folderPath).filter((x) => x.link.includes(filterByName));
     for (let file of files) {
         if (!file.title) {
             continue;
@@ -18,15 +18,15 @@ function groupByPathway(folderPath, filterByName) {
             groups[groupName] = {
                 text: groupName,
                 collapsed: true,
-                items: []
-            }
+                items: [],
+            };
         }
 
         const newFile = {
             ...file,
             title: splitFileName.join('.'),
             text: splitFileName.join('.'),
-        }
+        };
 
         groups[groupName].items.push(newFile);
     }
@@ -40,46 +40,46 @@ export function getSidebar() {
             {
                 text: 'About',
                 collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/blog')
+                items: SidebarBuilder.get.filesAndOrder('./docs/blog'),
             },
             {
                 text: 'Posts',
                 collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/blog/posts')
+                items: SidebarBuilder.get.filesAndOrder('./docs/blog/posts'),
             },
         ],
         '/tutorials': [
             {
                 text: 'Setup',
                 collapsed: false,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/setup')
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/setup'),
             },
             {
                 text: 'Examples',
                 collapsed: false,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/top')
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/top'),
             },
             {
                 text: 'Making Plugins',
                 collapsed: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/making-plugins')
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/making-plugins'),
             },
             {
                 text: 'Modding',
                 collapsed: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/modding')
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/modding'),
             },
             {
                 text: 'Subscribers Only',
                 collapsed: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/premium')
-            }
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/premium'),
+            },
         ],
         '/api': [
             {
                 text: 'Info',
                 collapsible: false,
-                items: SidebarBuilder.get.filesAndOrder('./docs/api')
+                items: SidebarBuilder.get.filesAndOrder('./docs/api'),
             },
             {
                 text: 'Athena.',
@@ -89,14 +89,14 @@ export function getSidebar() {
                     {
                         text: 'Classes',
                         collapsed: true,
-                        items: groupByPathway('./docs/api/classes', 'server_')
+                        items: groupByPathway('./docs/api/classes', 'server_'),
                     },
                     {
                         text: 'Interfaces',
                         collapsed: true,
-                        items: groupByPathway('./docs/api/interfaces', 'server_')
-                    }
-                ]
+                        items: groupByPathway('./docs/api/interfaces', 'server_'),
+                    },
+                ],
             },
             {
                 text: 'AthenaClient.',
@@ -106,14 +106,14 @@ export function getSidebar() {
                     {
                         text: 'Classes',
                         collapsed: true,
-                        items: groupByPathway('./docs/api/classes', 'client_')
+                        items: groupByPathway('./docs/api/classes', 'client_'),
                     },
                     {
                         text: 'Interfaces',
                         collapsed: true,
-                        items: groupByPathway('./docs/api/interfaces', 'client_')
-                    }
-                ]
+                        items: groupByPathway('./docs/api/interfaces', 'client_'),
+                    },
+                ],
             },
             {
                 text: 'AthenaShared.',
@@ -121,10 +121,9 @@ export function getSidebar() {
                 items: [
                     ...groupByPathway('./docs/api/modules', 'shared_utility'),
                     ...groupByPathway('./docs/api/modules', 'shared_locale'),
-                    ...groupByPathway('./docs/api/interfaces', 'shared_')
-                ]
-            }
-        ]
-    }
-};
-
+                    ...groupByPathway('./docs/api/interfaces', 'shared_'),
+                ],
+            },
+        ],
+    };
+}

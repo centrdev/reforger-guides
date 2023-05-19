@@ -6,8 +6,6 @@ comment: false
 
 # Getting Started
 
-
-
 ## Full Installation
 
 It is recommended to do a full install but quick instructions are provided below.
@@ -22,9 +20,9 @@ Athena is **not a plug and play game mode**. If you cannot script, program, or c
 
 ### Install Guides
 
-* [Installing on Windows](/tutorials/free/setup/installing-on-windows.md)
+-   [Installing on Windows](/tutorials/setup/installing-on-windows.md)
 
-* [Installing on Linux](/tutorials/free/setup/installing-on-linux.md)
+-   [Installing on Linux](/tutorials/setup/installing-on-linux.md)
 
 ## Fast Installation
 
@@ -32,10 +30,10 @@ If you wish to use Athena but not make any changes to the core (unlikely you won
 
 ### Windows
 
-* [Install MongoDB Server](https://www.mongodb.com/try/download/community)
-* [Install Git](https://git-scm.com/downloads)
-* [NodeJS 17+](https://nodejs.org/en/download/)
-* [alt:V Client](https://altv.mp/)
+-   [Install MongoDB Server](https://www.mongodb.com/try/download/community)
+-   [Install Git](https://git-scm.com/downloads)
+-   [NodeJS 17+](https://nodejs.org/en/download/)
+-   [alt:V Client](https://altv.mp/)
 
 ### Commands
 
@@ -63,7 +61,7 @@ npm run update
 npm run windows
 ```
 
-* Launch the alt:V Client
-* Join with`0.0.0.0:7788` in Direct Connect
-  * If the above does not work, try `127.0.0.1:7788`
-* That's it.
+-   Launch the alt:V Client
+-   Join with`0.0.0.0:7788` in Direct Connect
+    -   If the above does not work, try `127.0.0.1:7788`
+-   That's it.

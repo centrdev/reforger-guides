@@ -17,7 +17,7 @@ export default defineConfig({
     themeConfig: {
         logo: '/logo.png',
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/stuyk/altv-athena' },
+            { icon: 'github', link: 'https://github.com/centrdev/reforger-guides' },
             { icon: 'discord', link: 'https://discord.gg/arma' },
         ],
         // Search
@@ -45,8 +45,12 @@ export default defineConfig({
                         text: 'Official Resources',
                         items: [
                             {
-                                text: 'v4 Docs',
-                                link: 'https://stuyk.github.io/athena-docs-v4/',
+                                text: 'BI Forums',
+                                link: 'https://forums.bohemia.net/forums/forum/411-arma-reforger-editing/',
+                            },
+                            {
+                                text: 'BI WIKI',
+                                link: 'https://community.bistudio.com/wiki/Category:Arma_Reforger',
                             },
                         ],
                     },
@@ -54,16 +58,16 @@ export default defineConfig({
                         text: 'Unofficial Resources',
                         items: [
                             {
-                                text: 'alt:V Client',
-                                link: 'https://altv.mp',
+                                text: 'URL 1',
+                                link: 'https://#',
                             },
                             {
-                                text: 'alt:V Native Database',
-                                link: 'https://natives.altv.mp',
+                                text: 'URL 2',
+                                link: 'https://#',
                             },
                             {
-                                text: 'GTA:V Data Browser',
-                                link: 'https://forge.plebmasters.de/',
+                                text: 'URL 3',
+                                link: 'https://#',
                             },
                         ],
                     },
@@ -72,7 +76,7 @@ export default defineConfig({
         ],
         // Footer - Bottom of the Documentation Page
         footer: {
-            message: 'Created by F3NN3X | Est. 2023',
+            message: 'Created by F3NN3X | 2023',
         },
         // Page - Next & Previous Buttons
         docFooter: {

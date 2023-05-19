@@ -21,14 +21,14 @@ hero:
           text: 'Official ARMA Discord'
           link: 'https://discord.gg/arma'
 features:
-    - title: '🧰 A Starting Kit'
-      details: 'Everything in the Athena Framework is built to help you script a game mode faster. Using Athena requires some programming knowledge, and is not a plugin and play game mode.'
+    - title: 'ℹ️ Info!'
+      details: 'This is basically a collection of my personal notes and tools used to make terrains in ARMA Reforger Workbench.'
 
-    - title: '🛠️ Powered by TypeScript'
-      details: 'Using modern libraries like TypeScript, Vite, SWC, Vue 3, and MongoDB. A nearly seamless development environment for faster results.'
+    - title: '🛠️ Work In Progress'
+      details: 'This site is a work in progress and will be updated regularly.'
 
-    - title: '👋 Come Join Us!'
-      details: 'We are a teaching community, and we do answer questions. Additional assistance can be obtained if you are a subscriber.'
+    - title: '👋 Want to contribute?'
+      details: 'You can contribute by following the instructions on Github.'
 ---
 
 <style>
