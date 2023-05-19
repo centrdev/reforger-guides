@@ -4,27 +4,18 @@ order: -99999
 comment: false
 ---
 
-# About API
+# Official Tools
 
-The API has many different options but pay attention to the context at the top to see where the API pathways are available.
+The official BI tools
 
-## Server Import
+## Unofficial Tools
 
-```ts
-import * as Athena from '@AthenaServer/api';
-```
+A collection of various unofficial tools.
 
-## Client Import
+## Terrain Tools
 
-```ts
-import * as AthenaClient from '@AthenaClient/api';
-```
+A collection of terrain generation / editing tools.
 
-## Shared Import
+## Map Tools
 
-This is a planned import, and has not be implemented yet in v5.
-
-```ts
-import * as I from '@AthenaShared/interfaces';
-import * as Enum from '@AthenaShared/enums';
-```
+A collection of map specific tools.
