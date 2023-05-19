@@ -31,7 +31,7 @@ export default {
                 repoId: 'R_kgDOJk-DL',
                 category: 'Feedback',
                 categoryId: 'DIC_kwDOJk-DLs4CWmWs',
-                mapping: 'path',
+                mapping: 'pathname',
                 term: 'Leave a comment!',
                 reactionsEnabled: '1',
                 lang: 'en',
