@@ -1,13 +1,11 @@
 ---
-title: 'About Blog Posts'
+title: 'About News / Update Posts'
 order: -99999
 comment: false
 ---
 
-# About Blog Posts
+# About News / Update Posts
 
-These posts are meant to highlight some changes and decision making during the creation of the Athena Framework.
-
-They offer a better understanding into the author's mindset and the general usecase associated with how a feature was introduced.
+These posts are meant to highlight some changes and notes during the creation of the site.
 
 The latest posts are always at the top.
